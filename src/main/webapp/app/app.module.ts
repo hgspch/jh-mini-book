@@ -10,25 +10,25 @@ import { AuthInterceptor } from './blocks/interceptor/auth.interceptor';
 import { AuthExpiredInterceptor } from './blocks/interceptor/auth-expired.interceptor';
 import { ErrorHandlerInterceptor } from './blocks/interceptor/errorhandler.interceptor';
 import { NotificationInterceptor } from './blocks/interceptor/notification.interceptor';
-import { JhipsterSharedModule } from 'app/shared';
-import { JhipsterCoreModule } from 'app/core';
-import { JhipsterAppRoutingModule } from './app-routing.module';
-import { JhipsterHomeModule } from './home/home.module';
-import { JhipsterAccountModule } from './account/account.module';
-import { JhipsterEntityModule } from './entities/entity.module';
+import { JhipsterMiniBookSharedModule } from 'app/shared';
+import { JhipsterMiniBookCoreModule } from 'app/core';
+import { JhipsterMiniBookAppRoutingModule } from './app-routing.module';
+import { JhipsterMiniBookHomeModule } from './home/home.module';
+import { JhipsterMiniBookAccountModule } from './account/account.module';
+import { JhipsterMiniBookEntityModule } from './entities/entity.module';
 // jhipster-needle-angular-add-module-import JHipster will add new module here
 import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent, ActiveMenuDirective, ErrorComponent } from './layouts';
 
 @NgModule({
     imports: [
         BrowserModule,
-        JhipsterAppRoutingModule,
+        JhipsterMiniBookAppRoutingModule,
         Ng2Webstorage.forRoot({ prefix: 'jhi', separator: '-' }),
-        JhipsterSharedModule,
-        JhipsterCoreModule,
-        JhipsterHomeModule,
-        JhipsterAccountModule,
-        JhipsterEntityModule
+        JhipsterMiniBookSharedModule,
+        JhipsterMiniBookCoreModule,
+        JhipsterMiniBookHomeModule,
+        JhipsterMiniBookAccountModule,
+        JhipsterMiniBookEntityModule
         // jhipster-needle-angular-add-module JHipster will add new module here
     ],
     declarations: [JhiMainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, ActiveMenuDirective, FooterComponent],
@@ -60,4 +60,4 @@ import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent
     ],
     bootstrap: [JhiMainComponent]
 })
-export class JhipsterAppModule {}
+export class JhipsterMiniBookAppModule {}

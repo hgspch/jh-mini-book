@@ -1,14 +1,14 @@
 {
   "generator-jhipster": {
     "promptValues": {
-      "packageName": "com.mycompany.myapp",
+      "packageName": "org.jhipster.minibook",
       "nativeLanguage": "en"
     },
     "jhipsterVersion": "5.0.0",
     "applicationType": "monolith",
-    "baseName": "jhipster",
-    "packageName": "com.mycompany.myapp",
-    "packageFolder": "com/mycompany/myapp",
+    "baseName": "jhipster-mini-book",
+    "packageName": "org.jhipster.minibook",
+    "packageFolder": "org/jhipster/minibook",
     "serverPort": "8080",
     "authenticationType": "jwt",
     "cacheProvider": "ehcache",
@@ -24,9 +24,12 @@
     "enableSwaggerCodegen": false,
     "jwtSecretKey": "a7ead13673322c38e2817111385c15eef5971582",
     "clientFramework": "angularX",
-    "useSass": false,
+    "useSass": true,
     "clientPackageManager": "yarn",
-    "testFrameworks": [],
+    "testFrameworks": [
+        "gatling",
+        "protractor"
+    ],
     "jhiPrefix": "jhi",
     "enableTranslation": true,
     "nativeLanguage": "en",

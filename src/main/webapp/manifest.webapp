@@ -1,6 +1,6 @@
 {
-  "name": "Jhipster",
-  "short_name": "Jhipster",
+  "name": "JhipsterMiniBook",
+  "short_name": "JhipsterMiniBook",
   "icons": [
       {
           "src": "./content/images/hipster192.png",

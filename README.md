@@ -1,4 +1,4 @@
-# jhipster
+# jhipster-mini-book
 This application was generated using JHipster 5.0.0, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v5.0.0](https://www.jhipster.tech/documentation-archive/v5.0.0).
 
 ## Development
@@ -88,7 +88,7 @@ will generate few files:
 
 ## Building for production
 
-To optimize the jhipster application for production, run:
+To optimize the jhipster-mini-book application for production, run:
 
     ./gradlew -Pprod clean bootWar
 

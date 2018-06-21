@@ -16,12 +16,12 @@
 
 spring:
     application:
-        name: jhipster
+        name: jhipster-mini-book
     cache:
         type: simple
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:h2:mem:jhipster;DB_CLOSE_DELAY=-1
+        url: jdbc:h2:mem:jhipster-mini-book;DB_CLOSE_DELAY=-1
         name:
         username:
         password:

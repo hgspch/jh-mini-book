@@ -25,5 +25,5 @@ task buildDocker(type: DockerBuildImage, dependsOn: 'copyDockerFiles') {
     description = "Package application as Docker image"
     group = "Docker"
     inputDir = project.file("${project.buildDir}/docker")
-    tags = ["jhipster:latest".toString(), "jhipster:${project.version}".toString()]
+    tags = ["jhipster-mini-book:latest".toString(), "jhipster-mini-book:${project.version}".toString()]
 }

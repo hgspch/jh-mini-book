@@ -48,13 +48,13 @@ dependencyManagement {
 
 defaultTasks 'bootRun'
 
-group = 'com.mycompany.myapp'
+group = 'org.jhipster.minibook'
 version = '0.0.1-SNAPSHOT'
 
 description = ''
 
 bootWar {
-   mainClassName = 'com.mycompany.myapp.JhipsterApp'
+   mainClassName = 'org.jhipster.minibook.JhipsterMiniBookApp'
 }
 
 war {
@@ -62,7 +62,7 @@ war {
 }
 
 springBoot {
-    mainClassName = 'com.mycompany.myapp.JhipsterApp'
+    mainClassName = 'org.jhipster.minibook.JhipsterMiniBookApp'
     buildInfo()
 }
 
@@ -209,10 +209,7 @@ dependencies {
     testCompile "org.mockito:mockito-core"
     testCompile "com.mattbertolini:liquibase-slf4j"
     testCompile "org.hamcrest:hamcrest-library"
-
-    //removed when switched from h2 to postgresql
-    //testCompile "com.h2database:h2"
-
+    testCompile "com.h2database:h2"
     //jhipster-needle-gradle-dependency - JHipster will add additional dependencies here
 }
 
