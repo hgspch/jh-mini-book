@@ -191,7 +191,7 @@ dependencies {
         exclude module: 'mapstruct'
     }
     compile "io.springfox:springfox-bean-validators"
-    compile "mysql:mysql-connector-java"
+    compile "org.postgresql:postgresql"
     compile "org.mapstruct:mapstruct-jdk8:${mapstruct_version}"
     annotationProcessor "org.mapstruct:mapstruct-processor:${mapstruct_version}"
     annotationProcessor "org.hibernate:hibernate-jpamodelgen"
@@ -209,6 +209,10 @@ dependencies {
     testCompile "org.mockito:mockito-core"
     testCompile "com.mattbertolini:liquibase-slf4j"
     testCompile "org.hamcrest:hamcrest-library"
+
+    //removed when switched from h2 to postgresql
+    //testCompile "com.h2database:h2"
+
     //jhipster-needle-gradle-dependency - JHipster will add additional dependencies here
 }
 
