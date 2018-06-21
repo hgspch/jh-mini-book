@@ -27,8 +27,8 @@
     "useSass": true,
     "clientPackageManager": "yarn",
     "testFrameworks": [
-        "gatling",
-        "protractor"
+      "gatling",
+      "protractor"
     ],
     "jhiPrefix": "jhi",
     "enableTranslation": true,
