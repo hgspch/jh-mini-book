@@ -1,0 +1,9 @@
+{
+    "jhipsterMiniBookApp": {
+        "Units" : {
+            "null": "",
+            "KG": "KG",
+            "LB": "LB"
+        }
+    }
+}
